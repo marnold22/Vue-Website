@@ -1,7 +1,7 @@
 <template>
   <div id="app">
 
-    <div class="navbar has-shadow">
+    <nav class="navbar has-shadow">
       <div class="container">
 
         <div class="navbar-brand">
@@ -31,9 +31,8 @@
             </p>
           </div>
         </div>
-
       </div>
-    </div>
+    </nav>
     <router-view/>
   </div>
 </template>
