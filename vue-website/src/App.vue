@@ -30,7 +30,22 @@
       </div>
     </nav>
 
-    <router-view/>
+    <router-view></router-view>
+
+    <footer class="footer is-primary">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          </div>
+          <div class="column has-text-right">
+            <a class="icon" href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+            <a class="icon" href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
   </div>
 </template>
 
@@ -58,11 +73,12 @@ export default {
   background-color: #383838
   a:hover
     color: gray
-    background-color: #383838
 
 .r-item
   color: #C1C1C1
   padding: 0.5rem 1.75rem
+  &:hover
+    background-color: #383838
   +mobile
     color: gray
     &:hover
@@ -72,5 +88,16 @@ export default {
 .navbar-brand .navbar-item
   color: #C1C1C1
   font-weight: bold
+
+.navbar-burger span
+  background-color: #c1c1c1
+
+footer
+  background-color: $primary !important
+  color: #fff
+
+  .icon
+    color: #fff
+    margin-left: 20px
 
 </style>
